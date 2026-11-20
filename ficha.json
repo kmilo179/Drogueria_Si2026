@@ -1,0 +1,32 @@
+{
+ "organizacion": "Drogueria Farma",
+ "necesidad": "¿Que tipo de medicamento se vendio más en cada mes",
+ "quien_decide": "Gerente de inventario",
+ "hardware": "Computador y lector de barras",
+ "software": "Sistema de Punto de Venta",
+ "datos": "Una fila = cod_producto, cantidad_vendida, fecha, total",
+ "personas": "Cajero y gerente de inventario",
+ "tic": "Red lan de la droguería y conexión a bd",
+ "proceso": [
+  "1. El cajero registra la venta escaneando el codigo de barras",
+  "2. El sistema almacena la venta y genera un reporte de total por producto al final de cada mes",
+  "3. El gerente consulta el reporte para luego tomar decisiones."
+ ],
+ "tipo": "MIS",
+ "preguntas": {
+  "consulta": {
+   "pregunta": "¿Cual fue el medicamento más vendido por mes?",
+   "quien_decide": "cajero",
+   "decision": "Verificar el historial de ventas del producto para verificar su total de ventas",
+   "funcion_si": "distribuir",
+   "tipo": "TPS"
+  },
+  "reporte": {
+   "pregunta": "¿Qué categoria de medicamento fue más comprada en el mes?",
+   "quien_decide": "Gerente de inventario",
+   "decision": "Definir un periodo mensual para reabastecer a los proveedores y ajustar la cantidad de stock",
+   "funcion_si": "procesar",
+   "tipo": "MIS"
+  }
+ }
+}
