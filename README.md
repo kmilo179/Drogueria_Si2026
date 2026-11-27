@@ -1,6 +1,6 @@
 # Drogueria Farma
 
-**App:** (pendiente)  
+**App:** https://drogueria-si2026.onrender.com 
 **Repositorio:** https://github.com/kmilo179/Drogueria_Si2026
 
 **Necesidad:** ¿Que tipo de medicamento se vendio más en cada mes. **Quién decide:** Gerente de inventario. **Tipo de SI:** MIS.
