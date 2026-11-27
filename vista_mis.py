@@ -22,10 +22,10 @@ def ReporteMIS(conn, argumento):
 
     solara.Markdown(f"**Total de unidades vendidas:** {tabla['Unidades'].sum()}")
 
-    alta_demanda = tabla[tabla["Unidades"] >= 5]
+    alta_demanda = tabla[tabla["Unidades"] >= 15]
     if not alta_demanda.empty:
         productos = ", ".join(alta_demanda["Medicamento"])
-        solara.Warning(f"Alerta de inventario: {productos} superaron las 5 unidades vendidas en el mes. Debe priorizar reabastecimiento.")
+        solara.Warning(f"Alerta de inventario: {productos} superaron las 15 unidades vendidas en el mes. Debe priorizar reabastecimiento.")
 
     solara.DataFrame(tabla)
     fig, ax = plt.subplots(figsize=(5, 2.5))
